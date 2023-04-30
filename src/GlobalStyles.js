@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     #root {
+        min-height: 100vh;
         background: radial-gradient(50.53% 50.53% at 50.23% 49.47%, #414d59 0%, #1d2631 100%);
     }
 

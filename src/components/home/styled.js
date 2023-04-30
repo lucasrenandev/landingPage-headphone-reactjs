@@ -12,11 +12,10 @@ export const Home = styled.section`
     @media screen and (max-width: 1300px) {
         grid-template-columns: 1fr;
         text-align: center;
-        height: 100vh;
+        height: 100%;
     }
 
     @media screen and (max-width: 420px) {
-        height: 100vh;
         gap: 0;
     }
 `
