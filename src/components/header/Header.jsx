@@ -5,24 +5,24 @@ import { BiMenu } from "react-icons/bi"
 import { IoClose } from "react-icons/io5"
 
 export default function header() {
-    const [menuIcon, setMenuIcon] = useState(BiMenu)
+    const [menuIcon, setMenuIcon] = useState(<BiMenu/>)
     const navRef = useRef(null)
 
     const toggleMenu = () => {
         if(navRef.current.classList.contains("open")) {
             navRef.current.classList.remove("open")
-            setMenuIcon(BiMenu)
+            setMenuIcon(<BiMenu/>)
         }
         else {
             navRef.current.classList.add("open")
-            setMenuIcon(IoClose)
+            setMenuIcon(<IoClose/>)
         }
     }
 
     const hidleMenu = () => {
         window.addEventListener("scroll", () => {
             navRef.current.classList.remove("open")
-            setMenuIcon(BiMenu)
+            setMenuIcon(<BiMenu/>)
         })
     }
 

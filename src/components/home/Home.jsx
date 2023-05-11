@@ -38,8 +38,8 @@ export default function home() {
             distance: "3rem",
             duration: 2500,
         })
-        sr.reveal(".home-image", {delay: 550, origin: "top"})
-        sr.reveal(".home-text", {delay: 300, origin: "top", interval: 600})
+        sr.reveal(".home-image", {delay: 550, origin: "top", interval: 600})
+        sr.reveal(".home-text", {delay: 300, origin: "top"})
     }, [])
 
     return(
@@ -58,13 +58,13 @@ export default function home() {
             </HomeText>
 
             <Items className="items">
-                <Item className="item" id="item1">
+                <Item id="item1">
                     <ItemImage src={item1} alt="Product 1"/>
                 </Item>
-                <Item className="item" id="item2">
+                <Item id="item2">
                     <ItemImage src={item2} alt="Product 2"/>
                 </Item>
-                <Item className="item" id="item3">
+                <Item id="item3">
                     <ItemImage src={item3} alt="Product 3"/>
                 </Item>
             </Items>
